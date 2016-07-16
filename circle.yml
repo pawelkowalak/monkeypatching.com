@@ -11,10 +11,14 @@ dependencies:
   cache_directories:
     - bin
 
+test:
+  pre:
+    - git clone git@github.com:viru/viru.github.io.git public
+  override:
+    - hugo -v
+
 deployment:
   github.io:
     branch: master
     commands:
-      - git clone git@github.com:viru/viru.github.io.git public
-      - hugo -v
       - ./ci-deploy.sh

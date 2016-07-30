@@ -22,7 +22,7 @@ $ hugo -v
 
 Now you should have your static website generated in a `public` directory.
 
-Next we will setup GitHub Pages. First you need to create a repository called `<username>.github.io`. Everything that is inside will be publicly visible under http://<username>.github.io/. So if you create a hello world `index.html` there, it will work right away. If you want to have it under a custom domain, you only have to crate a CNAME record pointing at `<username>.github.io` and commit a `CNAME` file to your repository with your custom domain. You can check for example at my [github pages repository](https://github.com/viru/viru.github.io).
+Next we will setup GitHub Pages. First you need to create a repository called `<username>.github.io`. Everything that is inside will be publicly visible under http://&lt;username&gt;.github.io/. So if you create a hello world `index.html` there, it will work right away. If you want to have it under a custom domain, you only have to crate a CNAME record pointing at `<username>.github.io` and commit a `CNAME` file to your repository with your custom domain. You can check for example at my [github pages repository](https://github.com/viru/viru.github.io).
 
 Now the fun part: automation! We need two repositories. We already have `<username>.github.io` which is our destination. But we need a source for it, so let's do `git init` in `myblog` directory we've created earlier with Hugo. We don't want to commit build files inside the `public` directory, so let's remove it and add it to `.gitignore`. Of course we also need to create that repository on GitHub, add a remote and push your files.
 

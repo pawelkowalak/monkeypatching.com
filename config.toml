@@ -1,4 +1,4 @@
-baseurl = "http://www.monkeypatching.com/"
+baseurl = "https://www.monkeypatching.com/"
 languageCode = "en-us"
 title = "Monkey Patching"
 theme = "purehugo"
@@ -7,6 +7,6 @@ disqusShortname = "monkeypatching"
 
 [params]
     twitterName = "pawelkowalak"
-    githubName = "viru"
+    githubName = "pawelkowalak"
     description = "Pawel Kowalak"
     google_analytics = "UA-80579269-1"
